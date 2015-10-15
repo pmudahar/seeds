@@ -1,0 +1,20 @@
+<div class="bar">
+	<div class="navTitle">
+	    <span class="title"><a ng-href="#">Seeds of Wisdom</a></span>
+	</div>
+
+	<div class="navMenu">
+	  <!-- <span class="menu">About</span> -->
+	  <span class="menu"><a ng-href="#/podcasts">Podcasts</span>
+	  <!-- <span class="menu">Support</span> -->
+	</div>  
+</div>
+
+<div class="podcastTitle">
+	STARVE THE EGO, FEED THE SOUL
+</div>
+
+<div class="podcast" ng-repeat="tracks in urls">
+
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" ng-src="{{test(tracks.$value)}}"></iframe>
+</div>
